@@ -30,7 +30,7 @@ if(playerChoice === computerChoice && (playerScore<5 && computerScore<5)){
  (playerChoice === "rock" && computerChoice === "scissor")&&(playerScore<5 && computerScore<5)) {
  
  playerScore++;//adds 1 to playerScore
- playerScore_div.textContent = `PLAYER:${playerScore}`;
+ playerScore_div.textContent = `${playerScore}`;
  result_div.textContent = `${playerChoice[0].toUpperCase() + playerChoice.slice(1)} beats ${computerChoice[0].toUpperCase() + computerChoice.slice(1)}.You win! `;
        if (playerScore===5){
         result_div.textContent = `${playerChoice[0].toUpperCase() + playerChoice.slice(1)} beats ${computerChoice[0].toUpperCase() + computerChoice.slice(1)}. You have 5 points. You win the game! `;
@@ -40,7 +40,7 @@ if(playerChoice === computerChoice && (playerScore<5 && computerScore<5)){
  (playerChoice === "scissor" && computerChoice === "rock") ||
  (playerChoice === "rock" && computerChoice === "paper")&&(playerScore<5 && computerScore<5)) {
  computerScore++;//adds 1 to computerScore  
- computerScore_div.textContent = `${computerScore}COMPUTER:`;  
+ computerScore_div.textContent = `${computerScore}`;  
  result_div.textContent = `${computerChoice[0].toUpperCase() + computerChoice.slice(1)} beats ${playerChoice[0].toUpperCase() + playerChoice.slice(1)}.You lose!`;
     if (computerScore===5){
         result_div.textContent = `${computerChoice[0].toUpperCase() + computerChoice.slice(1)} beats ${playerChoice[0].toUpperCase() + playerChoice.slice(1)}. Computer has 5 points. You lose the game!`;
