@@ -22,7 +22,7 @@ if (playerScore===5 || computerScore===5){
 }
 
 if(playerChoice === computerChoice && (playerScore<5 && computerScore<5)){
-    result_div.textContent = "It's a draw!";
+    result_div.textContent = `You both chose ${computerChoice[0].toUpperCase() + computerChoice.slice(1)}. It's a draw!`;
         
 }else if
  ((playerChoice === "paper" && computerChoice === "rock") ||
